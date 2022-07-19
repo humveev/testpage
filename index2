@@ -1,0 +1,23 @@
+<html>
+<head>
+</head>
+<body>
+<p>
+speed<br>
+<input type="number" name="speed" id="speedms" onchange=updatetest(this) value=0> m/s<br>
+<input type="number" name="speed" id="speedkmh" onchange=updatetest(this) value=0> km/h<br>
+</p>
+<p>
+breakforce<br>
+<input type="number" name="breakforce" id="breakforce" onchange=updatebreak() value=0> m/s² <br>
+</p>
+<p>
+slope<br>
+positive = uphill | negativ = downhill <br>
+<input type="number" name="slope" id="slope" onchange=updatebreak() value=0> ° <br>
+</p>
+<button onclick=updatebreak()>submit</button>
+<p id="test-id">this is a test</p>
+<p id="breakage">break</p>
+</body>
+</html>
