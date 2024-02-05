@@ -29,7 +29,7 @@ function getServerTime(callback) {
 
                     date.setTime(date.getTime() + serverTimeOffset);
 
-                    callback.call(null, date);
+                    // callback.call(null, date);
                 } else {
                     console.error(xmlhttp.statusText);
                 }
@@ -42,6 +42,7 @@ function getServerTime(callback) {
 
         date.setTime(date.getTime() + serverTimeOffset);
 
-        callback.call(null, date);
+        // callback.call(null, date);
     }
+    return date;
 }
