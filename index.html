@@ -8,11 +8,11 @@
     </body>
 </html>
 
-<script>
+<script src="server_time_sync.js">
     $.getScript("server_time_sync.js");
     var date_intervall = setInterval(getServerTime, 500, date_intervall);
 
-    var displaydate = getServerTime();
+    var displaydate = getServerTime(date_intervall);
 
     document.getElementById("server-time").innerHTML = displaydate
 
